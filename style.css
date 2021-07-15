@@ -26,6 +26,9 @@ h5 {
     color: white;
     transition: .8s ease-in;
 }
+.watchButton:hover {
+    cursor: pointer;
+}
 
 .login {
     margin: 0;
