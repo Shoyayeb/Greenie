@@ -26,6 +26,7 @@ h5 {
     color: white;
     transition: .8s ease-in;
 }
+
 .login {
     margin: 0;
     padding: 0;
@@ -83,6 +84,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    height: 100vh;
 }
 
 .copaLive {
