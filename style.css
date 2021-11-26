@@ -336,6 +336,10 @@ footer {
     font-size: 18px;
     line-height: 24px;
 }
+.copyrightLink {
+    text-decoration: none;
+    color: #A9D962;
+}
 
 /* footer section ends */
 /* 
