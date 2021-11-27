@@ -1,76 +1,22 @@
-/* universal styles */
-body {
-    margin: 0;
-    font-family: Poppins;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h5 {
-    text-align: center;
-}
-
-/* buttons style start */
-.watchButton {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    background: rgb(224, 44, 109);
-    padding: 10px 24px;
-    text-decoration: none;
-    color: white;
-    transition: .8s ease-in;
-}
-.watchButton:hover {
-    cursor: pointer;
-}
-
-.login {
-    margin: 0;
-    padding: 0;
-}
 
 
-.watchButton .fas {
-    margin-left: 8px;
-}
 
-.watchButton:hover .fas {
-    animation: rightIcon .2s ease infinite alternate;
-}
-
-@keyframes rightIcon {
-    0% {
-        color: white;
-    }
-
-    100% {
-        transform: translateX(3px);
-    }
-}
-
-/* button style ends */
 header {
     background-color: #A9D962;
     padding-top: 40px;
     padding-left: 156px;
 }
 
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
+    width: auto;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 7px;
-    margin-right: 36px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -79,7 +25,7 @@ nav a {
 
 nav a:hover {
     opacity: .5;
-}
+} */
 
 /*live Section styles */
 .liveSection {
@@ -346,142 +292,3 @@ footer {
 media querry starts
 */
 /* for mobiles */
-@media screen and (max-width:688px) {
-
-    /* universal */
-    main {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-    }
-
-    /* live section */
-    .liveSection {
-
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 360px;
-        font-size: 36px;
-        line-height: 50px;
-        font-weight: 700;
-        margin-bottom: 30px;
-
-    }
-
-    .liveTitle {
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 50px;
-        color: #FFFFFF;
-
-    }
-
-    .copaLive {
-        margin-left: 16px;
-    }
-
-    .copaImage {
-        width: fit-content;
-        margin: 0;
-    }
-
-    .copaImage img {
-        width: 329px;
-        height: 259.17px;
-    }
-
-    /* 
-best player section
-*/
-    .bestPlayer {
-        margin-top: 70px;
-        margin-bottom: 27px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 27px;
-        grid-row-gap: 30px;
-
-    }
-
-    /* 
-highlight section
-*/
-    .highLight {
-        display: grid;
-        margin: 0;
-        grid-template-columns: repeat(1, 1fr);
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .highText h1 {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .highText p {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 28px;
-    }
-
-    .highText {
-        margin-bottom: 29px;
-        margin-top: 24px;
-    }
-
-    iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    /* 
-subscribe section 
-*/
-    .parent-wrapper {
-        width: 280px;
-        margin: 50px auto 65px;
-    }
-
-    /* 
-        footer Section
-        */
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 35px;
-    }
-
-    .footerImage {
-        width: 271px;
-        height: 63px;
-        margin: 43px 0px;
-    }
-
-    .fab {
-        margin: 14px;
-        font-size: 30px;
-        color: #969BAB;
-        border-radius: 50%;
-        padding: 8px;
-        background-color: #E7E7E8;
-    }
-
-    .copyright {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-}
