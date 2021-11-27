@@ -1,3 +1,4 @@
+
 .hidden {
   display: none;
 }
@@ -60,63 +61,57 @@ h5 {
 /* button style ends */
 
 /* 
-  .topnav .icon {
-    display: none;
-  }
+    .topnav .icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+       
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: absolute;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        color: blue;
+      }
+    }
   
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-     
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: absolute;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      color: blue;
-    }
-  }
-
- */
+   */
 
 /* .topnav {
-    overflow: hidden;
-    background-color: #333;
-  } */
+      overflow: hidden;
+      background-color: #333;
+    } */
 
-/* .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-   */
-/* .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  } */
+.topnav a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
 .icon {
   display: none;
 }
-
 
 @media screen and (max-width: 688px) {
   /* universal */
@@ -128,25 +123,28 @@ h5 {
   }
   .icon {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     font-size: larger;
     color: white;
-    background: #000;
+    /* background: #ffffff; */
+    border: 2px solid white;
+    border-radius: 3px;
     padding: 5px;
-    width: min-content;
+    /* width: 15px; */
   }
   .topnav.responsive {
-    float: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: left;
   }
   header {
     padding: 0;
   }
-  nav {
+  .navShown {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     padding: 15px;
   }
   main {
@@ -155,42 +153,43 @@ h5 {
     align-items: center;
   }
   /* live section */
-  .liveSection {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 360px;
+  .heroSection {
+    display: flex;
+    flex-direction: column;
     font-size: 36px;
     line-height: 50px;
     font-weight: 700;
     margin-bottom: 30px;
   }
 
-  .liveTitle {
-    font-family: "Poppins", sans-serif;
+  .heroTitle {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 50px;
-    color: #ffffff;
   }
 
-  .copaLive {
+  .homeSection {
     margin-left: 16px;
   }
 
-  .copaImage {
-    width: fit-content;
-    margin: 0;
+  .heroImage {
+    margin-bottom: 30px;
   }
-
-  .copaImage img {
-    width: 329px;
-    height: 259.17px;
+  .heroImage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
+  /* .heroImage img {
+      width: 329px;
+      height: 259.17px;
+    } */
 
   /* 
-best player section
-*/
+  best player section
+  */
   .bestPlayer {
     margin-top: 70px;
     margin-bottom: 27px;
@@ -201,8 +200,8 @@ best player section
   }
 
   /* 
-highlight section
-*/
+  highlight section
+  */
   .highLight {
     display: grid;
     margin: 0;
@@ -238,16 +237,16 @@ highlight section
   }
 
   /* 
-subscribe section 
-*/
+  subscribe section 
+  */
   .parent-wrapper {
     width: 280px;
     margin: 50px auto 65px;
   }
 
   /* 
-        footer Section
-        */
+          footer Section
+          */
 
   footer {
     display: flex;
