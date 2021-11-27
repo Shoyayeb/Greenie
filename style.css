@@ -1,31 +1,106 @@
-
+body {
+  margin: 0;
+  font-family: Poppins;
+  width: fit-content;
+}
 header {
   background-color: #a9d962;
   padding-top: 20px;
   padding-left: 10%;
 }
 
-/* nav {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav a {
+h5 {
+  text-align: center;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+  margin-right: 36px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.nav a:hover {
+  opacity: 0.5;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.icon {
+  display: none;
+}
+/* buttons style start */
+.watchButton {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  background: rgb(224, 44, 109);
+  padding: 10px 24px;
+  text-decoration: none;
+  color: white;
+  transition: 0.8s ease-in;
+}
+.watchButton:hover {
+  cursor: pointer;
+}
+.login {
+  margin: 0;
+  padding: 0;
+}
+
+.watchButton .fas {
+  margin-left: 8px;
+}
+
+.watchButton:hover .fas {
+  animation: rightIcon 0.2s ease infinite alternate;
+}
+
+@keyframes rightIcon {
+  0% {
     color: white;
-    text-decoration: none;
-    padding: 7px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+  }
+
+  100% {
+    transform: translateX(3px);
+  }
 }
+/* buttons style ends */
 
-nav a:hover {
-    opacity: .5;
-} */
-
-/*live Section styles */
 .heroSection {
   background-color: #a9d962;
   display: grid;
@@ -292,3 +367,177 @@ footer {
 media querry starts
 */
 /* for mobiles */
+@media screen and (max-width: 688px) {
+  /* universal */
+  body {
+    width: fit-content;
+  }
+  .nav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+  }
+  .topnav {
+    display: none;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .icon {
+    display: flex;
+    justify-content: end;
+    font-size: larger;
+    color: white;
+    /* background: #ffffff; */
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    /* width: 15px; */
+  }
+  .topnav.responsive {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  header {
+    padding: 0;
+  }
+  .navShown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  /* live section */
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .heroTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .homeSection {
+    margin-left: 16px;
+  }
+
+  .heroImage {
+    margin-bottom: 30px;
+  }
+  .heroImage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  /* .heroImage img {
+        width: 329px;
+        height: 259.17px;
+      } */
+
+  /* 
+    best player section
+    */
+  .services {
+    margin-top: 70px;
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 
+    highlight section
+    */
+  .highLight {
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .highText h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .highText p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .highText {
+    margin-bottom: 29px;
+    margin-top: 24px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 
+    subscribe section 
+    */
+  .parent-wrapper {
+    width: 280px;
+    margin: 50px auto 65px;
+  }
+
+  /* 
+            footer Section
+            */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+
+  .footerImage {
+    width: 271px;
+    height: 63px;
+    margin: 43px 0px;
+  }
+
+  .fab {
+    margin: 14px;
+    font-size: 30px;
+    color: #969bab;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e7e7e8;
+  }
+
+  .copyright {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
