@@ -1,8 +1,8 @@
 
 header {
   background-color: #a9d962;
-  padding-top: 40px;
-  padding-left: 156px;
+  padding-top: 20px;
+  padding-left: 10%;
 }
 
 /* nav {
@@ -32,15 +32,12 @@ nav a:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 27px;
   grid-row-gap: 30px;
-}
-
-.homeSection {
-  margin-left: 156px;
+  padding-left: 10%;
 }
 
 .heroTitle {
   font-family: "Poppins", sans-serif;
-  font-size: 64px;
+  font-size: 55px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -58,7 +55,7 @@ nav a:hover {
 }
 
 .heroImage img {
-  width: 100%;
+  width: 70%;
 }
 
 .services {
