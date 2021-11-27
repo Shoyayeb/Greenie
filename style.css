@@ -28,8 +28,10 @@ nav a:hover {
 /*live Section styles */
 .heroSection {
   background-color: #a9d962;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 27px;
+  grid-row-gap: 30px;
 }
 
 .homeSection {
@@ -56,11 +58,10 @@ nav a:hover {
 }
 
 .heroImage img {
-  width: 480px;
-  margin-left: 100px;
+  width: 100%;
 }
 
-.bestPlayer {
+.services {
   margin-top: 70px;
   margin-bottom: 27px;
   display: grid;
